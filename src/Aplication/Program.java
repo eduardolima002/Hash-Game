@@ -1,13 +1,13 @@
 package Aplication;
 
-import java.io.IOException;
+
 import java.util.Scanner;
 
 import entities.Field;
 import entities.hashException;
 
 public class Program {
-	public static void main(String[] args) throws InterruptedException, IOException {
+	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		UI ui = new UI();
 		boolean game = false;
@@ -21,7 +21,7 @@ public class Program {
 		ui.printBoard(board);
 		while (!game) {
 			try {
-			System.out.println(" ");
+			System.out.println("");
 			
 			System.out.println("");
 			currentPlayer = ui.changeTurn(turn);
