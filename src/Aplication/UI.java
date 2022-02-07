@@ -7,11 +7,11 @@ public class UI {
 	public void printBoard(Field[][] x) {
 		System.out.println("   0     1      2");
 		System.out.println("");
-		System.out.printf("0       %c | %c | %c %n", x[0][0].getField(), x[0][1].getField(), x[0][2].getField());
-		System.out.println("      ------------");
-		System.out.printf("1       %c | %c | %c %n", x[1][0].getField(), x[1][1].getField(), x[1][2].getField());
-		System.out.println("      ------------");
-		System.out.printf("2       %c | %c | %c %n", x[2][0].getField(), x[2][1].getField(), x[2][2].getField());
+		System.out.printf("0       %c  |  %c  |  %c %n", x[0][0].getField(), x[0][1].getField(), x[0][2].getField());
+		System.out.println("      --------------");
+		System.out.printf("1       %c  |  %c  |  %c %n", x[1][0].getField(), x[1][1].getField(), x[1][2].getField());
+		System.out.println("      --------------");
+		System.out.printf("2       %c  |  %c  |  %c %n", x[2][0].getField(), x[2][1].getField(), x[2][2].getField());
 
 	}
 
@@ -49,7 +49,7 @@ public class UI {
 			System.out.println("Player winner! : " + currentPlayer);
 			return true;
 		}
-		// verifica vitoria na coluna secundario
+		// verifica vitoria na coluna secundaria
 		if (x[2][0].getField() != 0 && x[2][0].getField() == x[1][1].getField()
 				&& x[2][0].getField() == x[0][2].getField()) {
 			System.out.println("Player winner! : " + currentPlayer);

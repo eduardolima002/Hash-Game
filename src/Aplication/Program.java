@@ -25,7 +25,7 @@ public class Program {
 			
 			System.out.println("");
 			currentPlayer = ui.changeTurn(turn);
-			System.out.print("type the position that you want, lines and columns whithout espaces (lc): ");
+			System.out.print("type the position you want, rows and columns whithout espaces (lc): ");
 
 			String position = sc.nextLine();
 			System.out.println("");
